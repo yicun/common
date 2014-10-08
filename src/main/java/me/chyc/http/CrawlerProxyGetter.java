@@ -1,5 +1,6 @@
-package me.chyc.utils;
+package me.chyc.http;
 
+import me.chyc.entity.Pair;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;

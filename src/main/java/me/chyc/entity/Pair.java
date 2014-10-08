@@ -1,13 +1,13 @@
-package me.chyc.utils;
+package me.chyc.entity;
 
 /**
  * Created by yicun.chen on 9/27/14.
  */
 public class Pair<T1, T2> extends Object {
-    T1 value1;
-    T2 value2;
+    public T1 value1;
+    public T2 value2;
 
-    Pair(T1 value1, T2 value2) {
+    public Pair(T1 value1, T2 value2) {
         this.value1 = value1;
         this.value2 = value2;
     }
@@ -37,4 +37,5 @@ public class Pair<T1, T2> extends Object {
                 ", value2=" + value2 +
                 '}';
     }
+
 }

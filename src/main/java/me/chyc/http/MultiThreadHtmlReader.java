@@ -1,5 +1,6 @@
-package me.chyc.utils;
+package me.chyc.http;
 
+import me.chyc.entity.Pair;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;

@@ -1,4 +1,4 @@
-package me.chyc.utils;
+package me.chyc.http;
 
 
 import java.io.*;
