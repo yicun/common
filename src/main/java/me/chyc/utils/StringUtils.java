@@ -65,6 +65,9 @@ public class StringUtils {
         return String.valueOf(num);
     }
 
+    public static int toInt(String string){
+        return Integer.valueOf(getDigital(string));
+    }
     public static void main(String args[]) {
         String line = "第9oo99张";
         String digital = StringUtils.toDigital(line);

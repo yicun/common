@@ -14,11 +14,19 @@ import java.util.List;
  * Created by chyc on 8/14/14.
  */
 public class CrawlerProxyGetter {
-    public static void main(String args[]) throws Exception{
+    public static void main(String args[]) throws Exception {
         List<Pair<String, Integer>> proxies = Getter("http://pachong.org");
-        for (Pair<String,Integer> proxy: proxies){
+        for (Pair<String, Integer> proxy : proxies) {
             System.out.println(proxy.toString());
         }
+    }
+
+    public static List<ProxyInfo> Getter2(String url) throws Exception {
+        List<Pair<String, Integer>> list = Getter(url);
+        List<ProxyInfo> proxyInfos = new ArrayList<ProxyInfo>();
+        for (Pair<String, Integer> pair : list)
+            proxyInfos.add(new ProxyInfo(pair.value1, pair.value2, null, null, true));
+        return proxyInfos;
     }
 
     public static List<Pair<String, Integer>> Getter(String url) throws Exception {
